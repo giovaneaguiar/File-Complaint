@@ -7,8 +7,42 @@
         <Rotulo nome="E-mail">
           <input type="text" />
         </Rotulo>
-        <Escolha></Escolha>
+        <Rotulo nome="Senha">
+          <input type="password" />
+        </Rotulo>
+        <Rotulo nome="Idade">
+          <input type="number" />
+        </Rotulo>
+        <Rotulo nome="Mensagem">
+          <textarea name="" cols="20" rows="5"></textarea>
+        </Rotulo>
+        <Rotulo nome="Características do Problema">
+          <span class="mr-4"
+            ><input type="checkbox" value="reproduzivel" /> Reproduzível</span
+          >
+          <span
+            ><input type="checkbox" value="intermitente" /> Intermitente</span
+          >
+        </Rotulo>
+        <Rotulo nome="Qual produto?">
+          <span class="mr-4"><input type="radio" /> Web</span>
+          <span class="mr-4"><input type="radio" /> Mobile</span>
+          <span><input type="radio" /> Outro</span>
+        </Rotulo>
+        <Rotulo nome="Prioridade">
+          <select name="" id="">
+            <option></option>
+          </select>
+        </Rotulo>
+        <Rotulo nome="Primeira Reclamação?">
+          <Escolha />
+        </Rotulo>
+        <hr />
+        <button>Enviar</button>
       </form>
+      <div class="painel">
+        <div class="cabecalho">Resultados</div>
+      </div>
     </div>
   </div>
 </template>
@@ -41,6 +75,11 @@ body {
   color: black;
   margin-top: 60px;
 }
+#app form button {
+  background-color: #d6a4a4;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
 
 .conteudo {
   display: flex;
@@ -66,5 +105,9 @@ body {
   font-weight: 300;
   margin: 20px;
   padding: 0;
+}
+
+.mr-4 {
+  margin-right: 40px;
 }
 </style>
