@@ -73,7 +73,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: black;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 #app form button {
   float: left;
