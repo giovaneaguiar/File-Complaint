@@ -42,6 +42,30 @@
       </form>
       <div class="painel">
         <div class="cabecalho">Resultados</div>
+        <Rotulo nome="E-mail">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Senha">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Idade">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Mensagem">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Marque as Opções">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Qual Produto?">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Prioridade">
+          <span>???</span>
+        </Rotulo>
+        <Rotulo nome="Primeira Reclamação?">
+          <span>???</span>
+        </Rotulo>
       </div>
     </div>
   </div>
