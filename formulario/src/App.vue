@@ -76,9 +76,12 @@ body {
   margin-top: 60px;
 }
 #app form button {
-  background-color: #d6a4a4;
-  font-size: 1.5rem;
+  float: left;
+  margin: 10px 0px;
+  padding: 10px 20px;
+  font-size: 1.4rem;
   border-radius: 5px;
+  background-color: #d6a4a4;
 }
 
 .conteudo {
