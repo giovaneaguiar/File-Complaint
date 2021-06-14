@@ -14,7 +14,7 @@
           <input type="number" v-model.number="usuario.idade"/>
         </Rotulo>
         <Rotulo nome="Mensagem">
-          <textarea name="" cols="20" rows="5"></textarea>
+          <textarea name="" cols="20" rows="5" v-model="mensagem"></textarea>
         </Rotulo>
         <Rotulo nome="Características do Problema">
           <span class="mr-4"
@@ -52,7 +52,9 @@
           <span>{{ usuario.idade }}</span>
         </Rotulo>
         <Rotulo nome="Mensagem">
-          <span>???</span>
+          <span style="white-space: pre;">{{ mensagem }}</span>
+          <!-- adicionei um estilo no span para preservar os espaços
+          em branco no textarea. -->
         </Rotulo>
         <Rotulo nome="Marque as Opções">
           <span>???</span>
@@ -83,6 +85,7 @@ export default {
   },
   data(){
     return {
+      mensagem: '',
       usuario: {
         email:'',
         senha: '',
