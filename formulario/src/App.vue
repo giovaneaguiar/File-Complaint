@@ -51,7 +51,7 @@
             <option v-for="prioridade in prioridades" 
             :value="prioridade.codigo"
             :selected="prioridade.codigo === 1"
-            :key="prioridade.codigo">{{ prioridade.nome }}</option>
+            :key="prioridade.codigo">{{ prioridade.codigo}} - {{ prioridade.nome }}</option>
           </select>
         </Rotulo>
         <Rotulo nome="Primeira Reclamação?">
