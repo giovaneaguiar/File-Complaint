@@ -114,9 +114,9 @@ export default {
     Escolha,
   },
   methods: {
-     enviar(){
-       this.enviado = true;
-     }
+    enviar() {
+      this.enviado = true;
+    },
   },
   data() {
     return {
