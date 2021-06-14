@@ -5,28 +5,46 @@
       <form class="painel">
         <div class="cabecalho">Formulário</div>
         <Rotulo nome="E-mail">
-          <input type="text" v-model.lazy.trim="usuario.email"/>
+          <input type="text" v-model.lazy.trim="usuario.email" />
         </Rotulo>
         <Rotulo nome="Senha">
           <input type="password" v-model="usuario.senha" />
         </Rotulo>
         <Rotulo nome="Idade">
-          <input type="number" v-model.number="usuario.idade"/>
+          <input type="number" v-model.number="usuario.idade" />
         </Rotulo>
         <Rotulo nome="Mensagem">
           <textarea name="" cols="20" rows="5" v-model="mensagem"></textarea>
         </Rotulo>
         <Rotulo nome="Características do Problema">
-          <span class="mr-4"><input type="checkbox" v-model="caracteristicas"
-            value="reproduzivel" /> Reproduzível</span>
-          <span><input type="checkbox" v-model="caracteristicas"
-            value="intermitente" /> Intermitente</span
+          <span class="mr-4"
+            ><input
+              type="checkbox"
+              v-model="caracteristicas"
+              value="reproduzivel"
+            />
+            Reproduzível</span
+          >
+          <span
+            ><input
+              type="checkbox"
+              v-model="caracteristicas"
+              value="intermitente"
+            />
+            Intermitente</span
           >
         </Rotulo>
         <Rotulo nome="Qual produto?">
-          <span class="mr-4"><input type="radio" /> Web</span>
-          <span class="mr-4"><input type="radio" /> Mobile</span>
-          <span><input type="radio" /> Outro</span>
+          <span class="mr-4"
+            ><input type="radio" value="Web" v-model="produto" /> Web</span
+          >
+          <span class="mr-4"
+            ><input type="radio" value="Mobile" v-model="produto" />
+            Mobile</span
+          >
+          <span
+            ><input type="radio" value="Outro" v-model="produto" /> Outro</span
+          >
         </Rotulo>
         <Rotulo nome="Prioridade">
           <select name="" id="">
@@ -51,7 +69,7 @@
           <span>{{ usuario.idade }}</span>
         </Rotulo>
         <Rotulo nome="Mensagem">
-          <span style="white-space: pre;">{{ mensagem }}</span>
+          <span style="white-space: pre">{{ mensagem }}</span>
           <!-- adicionei um estilo no span para preservar os espaços
           em branco no textarea. -->
         </Rotulo>
@@ -62,10 +80,10 @@
                 {{ c }}
               </li>
             </ul>
-            </span>
+          </span>
         </Rotulo>
         <Rotulo nome="Qual Produto?">
-          <span>???</span>
+          <span>{{ produto }}</span>
         </Rotulo>
         <Rotulo nome="Prioridade">
           <span>???</span>
@@ -88,17 +106,18 @@ export default {
     Rotulo,
     Escolha,
   },
-  data(){
+  data() {
     return {
       caracteristicas: [],
-      mensagem: '',
+      mensagem: "",
+      produto: "Web",
       usuario: {
-        email:'',
-        senha: '',
+        email: "",
+        senha: "",
         idade: 21,
-      }
-    }
-  }
+      },
+    };
+  },
 };
 </script>
 
