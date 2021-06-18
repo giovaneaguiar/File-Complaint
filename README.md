@@ -1,4 +1,4 @@
-<h1 align="center">Registrar Reclamacao</h1>
+<h1 align="center">File a Complaint</h1>
 <p align="center">Aplicação de um Formulário de Reclamação. Com uma interface de preenchimento e outra de resultados. Focada no front-end.</p>
 
  ### Pré-requisitos
